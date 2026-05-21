@@ -1,0 +1,30 @@
+{
+  "name": "testingflujocaja",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas E2E para el sistema Marbella con Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:auth": "playwright test tests/features/auth.spec.ts",
+    "test:roles": "playwright test tests/features/roles.spec.ts",
+    "test:usuarios": "playwright test tests/features/usuarios.spec.ts",
+    "test:productos": "playwright test tests/features/productos.spec.ts",
+    "report": "playwright show-report",
+    "lint": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FumarNoEsBueno/TestingFlujoCaja.git"
+  },
+  "keywords": ["playwright", "e2e", "testing", "marbella"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "dotenv": "^17.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
